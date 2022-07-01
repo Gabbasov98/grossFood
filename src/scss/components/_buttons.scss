@@ -1,0 +1,50 @@
+@import "../vars";
+.mbtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all ease-out .225s;
+    padding: 0;
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+.mbtn-green {
+    border-radius: 8px;
+    background-color: $primary;
+    color: #FFFFFF;
+    height: 54px;
+    width: 270px;
+    &:hover {
+        background-color: $primaryHover;
+        color: #FFFFFF;
+    }
+}
+
+.link-arrow {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    line-height: 125%;
+    &:hover {
+        color: $primaryHover;
+        path {
+            stroke: $primaryHover;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .mbtn-green {
+        width: 194px;
+        height: 44px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .mbtn-green {
+        width: 192px;
+        height: 42px;
+    }
+}
