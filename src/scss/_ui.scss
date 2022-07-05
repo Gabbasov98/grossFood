@@ -2,25 +2,92 @@
 @import 'components/_text.scss';
 @import 'components/_buttons.scss';
 @import 'components/_fonts.scss';
-.form-group {
+input {
+    &::placeholder {
+        color: #727272;
+    }
+}
+
+.mfg {
     position: relative;
     margin: 0;
-    margin-bottom: 30px;
+    label {
+        display: block;
+        padding-left: 20px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 156%;
+        margin-bottom: 5px;
+    }
+    .my-select .current,
     input {
-        border: none;
-        border-bottom: 1px solid #000000;
-        padding: 0 10px;
-        height: 47px;
+        border-radius: 8px;
+        border: 1px solid #D6D6D6;
+        padding: 0 20px;
+        height: 44px;
         width: 100%;
-        font-size: 18px;
-        background-color: transparent;
-        color: #000;
+        font-size: 14px;
+        background-color: #fff;
+        color: $black;
         &::placeholder {
-            color: #000;
+            color: #A9A9A9;
         }
         &:focus {
-            &::placeholder {
-                color: rgba(#000, 0.3);
+            border-color: $primary;
+        }
+    }
+    .my-select {
+        width: 100%;
+        min-height: 44px;
+        padding: 0;
+        border: none;
+        background: transparent;
+        border-radius: 8px;
+        &.open {
+            .current {
+                border-color: transparent;
+                z-index: 16;
+                background-color: transparent;
+                background-image: url(../img/select-arrow2.svg);
+            }
+        }
+        .current {
+            color: #939393;
+            transition: all .225s;
+            display: flex;
+            align-items: center;
+            position: relative;
+            z-index: 2;
+            background-image: url(../img/select-arrow.svg);
+            background-repeat: no-repeat;
+            background-position: right 31px center;
+        }
+        .list {
+            padding: 44px 20px 0;
+            top: 0;
+            margin: 0;
+            border: 1px solid #D6D6D6;
+            border-radius: 8px;
+        }
+        .option {
+            padding: 12px 0;
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            line-height: 129%;
+            border-top: 1px solid #D6D6D6;
+        }
+        .disabled {
+            display: none;
+        }
+        .option:hover,
+        .option.focus,
+        .option.selected.focus {
+            background: transparent;
+        }
+        &--selected {
+            .current {
+                color: $black;
             }
         }
     }
@@ -68,6 +135,14 @@
             top: 50%;
             transform: translateY(-50%);
             transition: all .100s;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .mfg {
+        label {
+            padding-left: 14px;
         }
     }
 }

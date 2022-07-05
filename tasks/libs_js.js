@@ -1,10 +1,12 @@
 const plugins = [
     'node_modules/jquery/dist/jquery.js',
     'src/libs/js/slick.js',
+    'src/libs/js/jquery.nice-select.min.js',
+    'src/libs/js/jquery.maskedinput.min.js',
     // 'node_modules/swiper/swiper-bundle.js',
     // 'node_modules/bootstrap/dist/js/bootstrap.js',
     // 'src/libs/js/jquery.fancybox.min.js',
-    // 'src/libs/js/jquery.maskedinput.min.js',
+
 ];
 const {
     src,

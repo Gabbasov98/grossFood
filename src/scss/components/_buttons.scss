@@ -22,6 +22,29 @@
     }
 }
 
+.mbtn-green-outline {
+    border: 2px solid $primary;
+    border-radius: 8px;
+    color: $black;
+    font-size: 16px;
+    &:hover {
+        background-color: $primary;
+        color: #fff;
+        path {
+            stroke: #fff;
+        }
+    }
+}
+
+.mbtn-black {
+    background-color: $black;
+    color: #fff;
+    &:hover {
+        background-color: $primary;
+        color: #fff;
+    }
+}
+
 .link-arrow {
     display: flex;
     align-items: center;

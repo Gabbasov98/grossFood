@@ -113,6 +113,218 @@
                     </div>
             </section>
 
+            <section class='collection'>
+                <div class='container'>
+                    <div class='collection__top'>
+                        <div class="collection__title display2">Супер-цена</div>
+                        <a href="" class="catalog-index__link link-arrow">
+                            <span>Смотреть все</span>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 18L15 12L9 6" stroke="black" stroke-linecap="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="collection__grid">
+                        <div class="product-card">
+                            @@include('components/cards/_product-card.html',{"sale":""})
+                        </div>
+                        <div class="product-card">
+                            @@include('components/cards/_product-card.html',{"sale":""})
+                        </div>
+                        <div class="product-card">
+                            @@include('components/cards/_product-card.html',{"sale":"false"})
+                        </div>
+                        <div class="product-card">
+                            @@include('components/cards/_product-card.html',{"sale":""})
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class='why'>
+                <div class='container'>
+                    <div class="why__title display2">Почему Гросс Фуд?</div>
+                    <div class="why__inner">
+                        <div class='why__items'>
+                            <div class="why__item">
+                                <span class="why__item-num">2000</span>
+                                <span class="why__item-title">клиентов по <br> всей России</span>
+                            </div>
+                            <div class="why__item">
+                                <span class="why__item-num why__item-num--big">24</span>
+                                <span class="why__item-title">года поставок <br> продуктов</span>
+                            </div>
+                            <div class="why__item">
+                                <span class="why__item-num">6</span>
+                                <span class="why__item-title">дней в неделю <br> доставка заказов</span>
+                            </div>
+                            <div class="why__item">
+                                <span class="why__item-num why__item-num--big">25</span>
+                                <span class="why__item-title">категорий <br> товаров</span>
+                            </div>
+                            <div class="why__item">
+                                <span class="why__item-num">2000</span>
+                                <span class="why__item-title">наименований <br> товаров</span>
+                            </div>
+                        </div>
+
+                        <div class="why__info">
+                            <div class="why__info-item">
+                                <div class="why__info-title">Качество и безопасность</div>
+                                <div class="why__info-desc">Работаем по системе «Меркурий», выдаём полный пакет сопроводительной документации. </div>
+                            </div>
+                            <div class="why__info-item">
+                                <div class="why__info-title">Статус дистрибьютора</div>
+                                <div class="why__info-desc">Мы сотрудничаем с производителями напрямую, а значит поставляем продукты быстро, в любом объёме и по доступным ценам.</div>
+                            </div>
+                            <div class="why__info-item">
+                                <div class="why__info-title">Программа лояльности</div>
+                                <div class="why__info-desc">Cпециально разработанная программа лояльности позволяет обменивать накопленные баллы не только на часть стоимости заказа, но и на ценные подарки.</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="loyalty">
+                        <div class="loyalty__title display2">Программа лояльности Гросс Фуд</div>
+                        <div class="loyalty__wrap">
+                            <div class="loyalty__desc">Копите GROSS coins и списывайте их в счет стоимости заказа или обменивайте на ценные подарки!</div>
+                            <a href="" class="loyalty__btn mbtn mbtn-green">
+                                <span>Подробнее</span>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 18L15 12L9 6" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                                </svg>
+                            </a>
+                            <img src="img/loyalty.webp" alt="" class="loyalty__img">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class='work-with'>
+                <div class='container'>
+                    <div class='work-with__inner'>
+                        <div class="work-with__title display2">С кем мы работаем</div>
+                        <div class="work-with__img">
+                            <img src="img/work-with.png" alt="">
+                        </div>
+                        <div class="work-with__desc">Наша Миссия: всегда находить самое эффективное решение задачи любой сложности для всех заведений, имеющих отношение к сфере HoReCa. Благодаря профессиональному подходу к сервису, статусу официального дистрибьютора, наличию собственного
+                            транспортного парка, оснащенного автоматизированной системой логистики, а также благодаря экспертности и многолетней преданности своему делу всей сплоченной команды ГРОСС ФУД.</div>
+                        <button class="work-with__btn mbtn mbtn-green">
+                            <span>Перейти в раздел</span>
+                            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.5 18L15.5 12L9.5 6" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>
+                         </button>
+                    </div>
+                </div>
+            </section>
+
+            <section class='become-client'>
+                <div class='container'>
+                    <div class='become-client__inner'>
+                        <div class="become-client__img">
+                            <img src="img/become.png" alt="">
+                        </div>
+                        <div class="become-client__content">
+                            <div class="become-client__title display2">Стать нашим клиентом</div>
+                            <form class="become-client__form">
+                                <div class="become-client__subtitle display3">Предложение для Вашего бизнеса</div>
+                                <div class="become-client__form-grid">
+                                    <fieldset class='mfg'>
+                                        <label>Имя</label>
+                                        <input type='text' placeholder="Введите имя " />
+                                    </fieldset>
+                                    <fieldset class='mfg'>
+                                        <label>Ваша ниша</label>
+                                        <select class="my-select">
+                                           <option selected hidden disabled>Выберите нишу</option>
+                                           <option>Ресторан / кафе / фастфуд</option>
+                                           <option>Мясное / пищевое производство</option>
+                                           <option>Гостиница / отель</option>
+                                           <option>Комбинат питания</option>
+                                           <option>Кулинарный / кондитерский цех</option>
+                                           <option>Кейтеринговая служба / столовая</option>
+                                       </select>
+                                    </fieldset>
+                                    <fieldset class='mfg'>
+                                        <label>Номер телефона</label>
+                                        <input type='tel' placeholder="+7 " />
+                                    </fieldset>
+                                    <fieldset class='mfg'>
+                                        <label>Способ получения</label>
+                                        <select class="my-select">
+                                           <option selected hidden disabled>Выберите способ получения</option>
+                                           <option>Доставка по МСК или МО</option>
+                                           <option>Самовывоз</option>
+                                           <option>Доставка в регионы</option>
+                                       </select>
+                                    </fieldset>
+                                    <fieldset class='mfg'>
+                                        <label>E-mail</label>
+                                        <input type='email' placeholder="Введите e-mail" />
+                                    </fieldset>
+                                    <fieldset class='mfg'>
+                                        <label>Ваши объемы закупки</label>
+                                        <select class="my-select">
+                                           <option selected hidden disabled>Выберите примерную сумму</option>
+                                           <option>до 200 000 ₽</option>
+                                           <option>от 200 000 до 500 000 ₽</option>
+                                           <option>более 500 000 ₽</option>
+                                       </select>
+                                    </fieldset>
+                                    <button class="become-client__btn mbtn mbtn-green">Получить</button>
+                                </div>
+                            </form>
+                            <div class="become-client__desc">Мы делаем больше, чем остальные поставщики продуктов. Привозим оптом качественный продукт по выгодной цене. Проводим по ФГИС «Меркурий», доставляем на следующий день после заказа. Выполняем свои обязательства на 100% - работаем
+                                для бизнеса и понимаем, насколько для вас важны сроки и качество. Поставляем от производителей напрямую, поэтому цены приемлемые. Чтобы получить прайс, оставьте заявку на сайте или позвоните.</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class='clients'>
+                <div class='container'>
+                    <div class="clients__top">
+                        <div class="clients__title display3">Наши клиенты</div>
+                        <a href="" class="catalog-index__link link-arrow">
+                            <span>Смотреть все</span>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 18L15 12L9 6" stroke="black" stroke-linecap="round"></path>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="clients__slider">
+                        <div class="clients__item">
+                            <img src="img/client.webp" alt="">
+                        </div>
+                        <div class="clients__item">
+                            <img src="img/client2.webp" alt="">
+                        </div>
+                        <div class="clients__item">
+                            <img src="img/client3.webp" alt="">
+                        </div>
+                        <div class="clients__item">
+                            <img src="img/client4.webp" alt="">
+                        </div>
+                        <div class="clients__item">
+                            <img src="img/client5.webp" alt="">
+                        </div>
+                        <div class="clients__item">
+                            <img src="img/client6.webp" alt="">
+                        </div>
+                        <div class="clients__item">
+                            <img src="img/client.webp" alt="">
+                        </div>
+                        <div class="clients__item">
+                            <img src="img/client2.webp" alt="">
+                        </div>
+                        <div class="clients__item">
+                            <img src="img/client3.webp" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
         </main>
         @@include('components/page-blocks/_footer.html')
         </div>

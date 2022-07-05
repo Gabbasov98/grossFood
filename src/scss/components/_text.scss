@@ -13,6 +13,18 @@
     font-family: $font2;
 }
 
+.display3 {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 114%;
+}
+
+.display4 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+}
+
 @media screen and (max-width: 1024px) {
     .display1 {
         font-size: 48px;

@@ -1,0 +1,22 @@
+<div class="product-card__badges">
+    <div class="product-card__badge product-card__badge--new">Новинка</div>
+    <div class="product-card__badge product-card__badge--sale">Акция</div>
+</div>
+<button class="product-card__favourite"></button>
+<a href="" class="product-card__img">
+    <img src="img/product.webp" alt="">
+</a>
+<a href="" class="product-card__title">Перец ЧЕРНЫЙ молотый 1кг*5</a>
+<div class="product-card__bottom">
+    <div class="product-card__left">
+        <div class="product-card__num">1 шт</div>
+        @@if(sale === "false"){
+        <div class="product-card__price">266.2₽ </div>
+        } @@if(sale !== "false"){
+        <div class="product-card__price-old">266.2₽ </div>
+        <div class="product-card__price-new">266.2₽ </div>}
+    </div>
+    <button class="product-card__cart mbtn mbtn-green">
+        <img src="img/cart.svg" alt="">
+    </button>
+</div>
