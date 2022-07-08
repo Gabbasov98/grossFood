@@ -19,10 +19,10 @@
     margin: 0 auto;
     padding: 0 30px;
     @media screen and (max-width: 1024px) {
+        padding: 0 80px;
+    }
+    @media screen and (max-width: 800px) {
         padding: 0 20px;
-        @media screen and (min-width: 800px) {
-            padding: 0 80px;
-        }
     }
     @media screen and (max-width: 380px) {
         padding: 0 10px;

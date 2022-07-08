@@ -501,7 +501,7 @@
 @media screen and (max-width: 1024px) {
     .header {
         .container {
-            @media screen and (max-width: 800px) {
+            @media screen and (min-width: 800px) {
                 padding: 0 40px;
             }
         }
