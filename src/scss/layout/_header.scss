@@ -238,8 +238,12 @@
         display: block;
         font-size: 14px;
         line-height: 129%;
+        color: #727272;
         &:not(:last-child) {
             margin-bottom: 12px;
+        }
+        &:hover {
+            color: $black;
         }
     }
 }
@@ -293,6 +297,7 @@
             background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='12' height='12' viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 10L8 6L4 2' stroke='%23101010' stroke-linecap='round'/%3E%3C/svg%3E");
         }
         &--active {
+            color: $black;
             &~.header-catalog__hidden {
                 opacity: 1;
                 pointer-events: unset;
