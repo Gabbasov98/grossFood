@@ -11,6 +11,16 @@ input {
 .mfg {
     position: relative;
     margin: 0;
+    &__error {
+        position: absolute;
+        color: red;
+        top: 100%;
+        left: 0;
+        opacity: 0;
+        pointer-events: none;
+        font-size: 14px;
+        margin-top: 2px;
+    }
     label {
         display: block;
         padding-left: 20px;
@@ -34,6 +44,11 @@ input {
         }
         &:focus {
             border-color: $primary;
+        }
+        &.error {
+            &~.mfg__error {
+                opacity: 1;
+            }
         }
     }
     .my-select {

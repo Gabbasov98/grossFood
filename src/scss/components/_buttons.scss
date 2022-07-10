@@ -20,6 +20,10 @@
         background-color: $primaryHover;
         color: #FFFFFF;
     }
+    &:disabled {
+        background-color: rgba(black, .3);
+        pointer-events: none;
+    }
 }
 
 .mbtn-green-outline {
