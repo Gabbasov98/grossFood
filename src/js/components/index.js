@@ -5,8 +5,8 @@ function mainSlider() {
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 3000,
-        speed: 500,
+        autoplaySpeed: 5000,
+        speed: 700,
         fade: true,
         cssEase: 'linear',
         arrows: false

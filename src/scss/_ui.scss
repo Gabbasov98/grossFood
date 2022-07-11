@@ -18,7 +18,7 @@ input {
         left: 0;
         opacity: 0;
         pointer-events: none;
-        font-size: 14px;
+        font-size: 13px;
         margin-top: 2px;
     }
     label {
@@ -45,6 +45,13 @@ input {
         &:focus {
             border-color: $primary;
         }
+        &.error {
+            &~.mfg__error {
+                opacity: 1;
+            }
+        }
+    }
+    select{
         &.error {
             &~.mfg__error {
                 opacity: 1;

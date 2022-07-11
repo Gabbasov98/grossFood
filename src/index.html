@@ -240,11 +240,12 @@
                                 <div class="become-client__form-grid">
                                     <fieldset class='mfg'>
                                         <label>Имя</label>
-                                        <input type='text' placeholder="Введите имя " />
+                                        <input id="clientName" type='text' placeholder="Введите имя " />
+                                        <span class="mfg__error body-text3">Неправильно заполнено поле</span>
                                     </fieldset>
                                     <fieldset class='mfg'>
                                         <label>Ваша ниша</label>
-                                        <select class="my-select">
+                                        <select id="niche" class="my-select">
                                            <option selected hidden disabled>Выберите нишу</option>
                                            <option>Ресторан / кафе / фастфуд</option>
                                            <option>Мясное / пищевое производство</option>
@@ -252,36 +253,40 @@
                                            <option>Комбинат питания</option>
                                            <option>Кулинарный / кондитерский цех</option>
                                            <option>Кейтеринговая служба / столовая</option>
-                                       </select>
+                                        </select>
+                                        <span class="mfg__error body-text3">Выберите один из вариантов</span>
                                     </fieldset>
                                     <fieldset class='mfg'>
                                         <label>Номер телефона</label>
-                                        <input type='tel' placeholder="+7 " />
+                                        <input id="phoneInput" type='tel' placeholder="+7 " />
                                         <span class="mfg__error body-text3">Неправильно заполнено поле</span>
                                     </fieldset>
                                     <fieldset class='mfg'>
                                         <label>Способ получения</label>
-                                        <select class="my-select">
+                                        <select id="getType" class="my-select">
                                            <option selected hidden disabled>Выберите способ получения</option>
                                            <option>Доставка по МСК или МО</option>
                                            <option>Самовывоз</option>
                                            <option>Доставка в регионы</option>
-                                       </select>
+                                        </select>
+                                        <span class="mfg__error body-text3">Выберите один из вариантов</span>
                                     </fieldset>
                                     <fieldset class='mfg'>
                                         <label>E-mail</label>
-                                        <input type='email' placeholder="Введите e-mail" />
+                                        <input id="email" type='email' placeholder="Введите e-mail" />
+                                        <span class="mfg__error body-text3">Неправильно заполнено поле</span>
                                     </fieldset>
                                     <fieldset class='mfg'>
                                         <label>Ваши объемы закупки</label>
-                                        <select class="my-select">
+                                        <select id="sum" class="my-select">
                                            <option selected hidden disabled>Выберите примерную сумму</option>
                                            <option>до 200 000 ₽</option>
                                            <option>от 200 000 до 500 000 ₽</option>
                                            <option>более 500 000 ₽</option>
                                        </select>
+                                        <span class="mfg__error body-text3">Выберите один из вариантов</span>
                                     </fieldset>
-                                    <button disabled class="become-client__btn submit__btn mbtn mbtn-green">Получить</button>
+                                    <button type="submit" class="become-client__btn submit__btn mbtn mbtn-green">Получить</button>
                                 </div>
                             </form>
                             <div class="become-client__desc">Мы делаем больше, чем остальные поставщики продуктов. Привозим оптом качественный продукт по выгодной цене. Проводим по ФГИС «Меркурий», доставляем на следующий день после заказа. Выполняем свои обязательства на 100% - работаем
