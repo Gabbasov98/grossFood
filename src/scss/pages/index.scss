@@ -130,7 +130,7 @@
         margin-top: 32px;
         font-size: 24px;
         line-height: 133%;
-        max-width: 600px;
+        max-width: 660px;
     }
     &__link {
         margin-top: 40px;
@@ -623,9 +623,11 @@
             margin-top: 18px;
         }
     }
+
     .work-with {
         padding: 140px 0 160px;
     }
+
     .become-client {
         &__content {
             width: 56%;
@@ -896,6 +898,7 @@
             flex-shrink: 0;
         }
     }
+
     .why {
         padding: 35px 0;
     }
@@ -1012,6 +1015,7 @@
 
         }
     }
+
     .why {
         &__info {
             margin-left: 50px;
@@ -1110,9 +1114,9 @@
         }
         &__img3 {
             transform: rotate(-90deg) matrix(0.8, -0.61, 0.6, 0.8, 0, 0);
-            width: 262px;
+            width: 240px;
             left: -100px;
-            bottom: 14px;
+            bottom: 60px;
         }
         &__img4 {
             width: 252px;

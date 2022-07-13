@@ -414,18 +414,21 @@
             }
         }
     }
+
     .header-top {
         &__inner {
             justify-content: flex-end;
             min-height: 36px;
         }
     }
+
     .header-bottom {
         padding: 11px 0;
         &__inner {
             position: relative;
         }
     }
+
     .nav {
         opacity: 0;
         pointer-events: none;
@@ -498,6 +501,7 @@
             }
         }
     }
+
     .header-catalog {
         left: 100px;
     }
@@ -536,10 +540,10 @@
         }
         &__catalog-btn {
             width: 120px;
-            height: 30px;
+            height: 42px;
             font-size: 14px;
             color: #727272;
-            margin-left: 12px;
+            margin-left: 32px;
             &-icon,
             &-icon2 {
                 width: 16px;
@@ -563,7 +567,7 @@
             z-index: 3;
             position: absolute;
             right: 102px;
-            bottom: 68px;
+            bottom: 85px;
             font-size: 0;
             width: 28px;
             height: 28px;
@@ -581,7 +585,7 @@
             opacity: 1;
             pointer-events: unset;
             input {
-                height: 30px;
+                height: 42px;
                 font-size: 14px;
             }
             &:before {
@@ -593,6 +597,9 @@
                 left: -20px;
                 top: -13px;
                 background: #D6D6D6;
+            }
+            &-btn{
+                width: 42px;
             }
         }
     }
@@ -609,10 +616,10 @@
     }
     .nav {
         width: 100%;
-        height: calc(100vh - 109px);
+        height: calc(100vh - 130px);
         overflow: hidden;
         position: fixed;
-        top: 109px;
+        top: 130px;
         box-shadow: none;
         z-index: 10;
         border-radius: 0;
@@ -661,10 +668,10 @@
     }
     .header-catalog {
         width: 100%;
-        height: calc(100vh - 109px);
+        height: calc(100vh - 130px);
         overflow: hidden;
         position: fixed;
-        top: 109px;
+        top: 130px;
         left: 0;
         box-shadow: none;
         z-index: 10;

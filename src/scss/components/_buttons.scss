@@ -16,6 +16,7 @@
     color: #FFFFFF;
     height: 54px;
     width: 270px;
+    font-weight: 700;
     &:hover {
         background-color: $primaryHover;
         color: #FFFFFF;
@@ -69,9 +70,11 @@
         display: none;
     }
     &:hover{
+        border-color: #B7B7B7;
+        background-color: transparent;
         path{
             stroke: none;
-            fill: #fff;
+            fill: #B7B7B7;
         }
     }
     &--active{
