@@ -1,0 +1,266 @@
+@import "../vars";
+.catalog-item{
+  padding-bottom: 50px;
+  &__inner{
+    margin-top: 30px;
+    display: flex;
+  }
+  &__left{
+    margin-right: 140px;
+    width: 500px;
+    flex-shrink: 0;
+  }
+  &__right{
+    flex-grow: 1;
+    max-width: 525px;
+  }
+  &__img{
+    max-width: 372px;
+    margin: 0 auto;
+    img{
+      width: 100%;
+      display: block;
+    }
+  }
+  &__detail{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.07);
+    border-radius: 8px;
+    padding: 50px;
+  }
+  &__title{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 117%;
+  }
+  &__weight{
+    margin-top: 8px;
+  }
+  &__info{
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__price{
+    &-num{
+      font-weight: 700;
+      font-size: 24px;
+      margin-top: 12px;
+    }
+  }
+  &__has{
+    color: $primary;
+    font-weight: 700;
+  }
+  &__buttons{
+    margin-top: 38px;
+    display: flex;
+    align-items: center;
+  }
+  &__btn{
+    width: 184px;
+    height: 44px;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  &__favourite{
+    margin-left: 24px;
+  }
+}
+
+.catalog-detail{
+  margin-top: 54px;
+  &__tabs{
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+  }
+  &__tab{
+    padding: 12px 0;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    position: relative;
+    margin-right: 33px;
+    cursor: pointer;
+    color: $gray2;
+    &::before{
+      content: '';
+      position: absolute;
+      left: -2px;
+      bottom: 0;
+      width: calc(100% + 4px);
+      height: 3px;
+      border-radius: 2px;
+      background-color: $primary;
+      opacity: 0;
+    }
+    &:last-child{
+      margin-right: 0;
+    }
+    &:hover,
+    &--active{
+      color: $black;
+      &::before{
+        opacity: 1;
+      }
+    }
+    &--active{
+      pointer-events: none;
+    }
+    &-content{
+      display: none;
+      &--active{
+        display: block;
+      }
+    }
+  }
+  &__content{
+    border-top: 1px solid #D3D3D3;
+    border-bottom: 1px solid #D3D3D3;
+    padding: 31px 0;
+    margin-top: -1px;
+  }
+}
+
+.props{
+  width: 370px;
+  max-width: 100%;
+  &__item{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    &:not(:last-child){
+      margin-bottom: 8px;
+    }
+    &::before{
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 16px;
+      width: 100%;
+      height: 1px;
+      border-bottom: 1px dashed #D0D0D0;
+    }
+  }
+  &__title,
+  &__desc{
+    font-size: 16px;
+    line-height: 150%;
+    background-color: #fff;
+    position: relative;
+    z-index: 2;
+  }
+  &__title{
+    padding-right: 2px;
+  }
+  &__desc{
+    padding-left: 2px;
+  }
+}
+
+@media screen and (max-width: 1200px){
+  .catalog-item{
+    &__left{
+      margin-right: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px){
+  .catalog-item{
+    padding-bottom: 35px;
+    &__left{
+      width: 300px;
+    }
+    &__right{
+      max-width: 310px;
+    }
+    &__img{
+      max-width: 220px;
+    }
+    &__detail{
+      padding: 0;
+      background-color: transparent;
+      box-shadow: none;
+    }
+    &__title{
+      font-size: 22px;
+      line-height: 127%;
+    }
+    &__weight{
+      margin: 0;
+    }
+    &__info{
+      margin-top: 4px;
+    }
+    &__buttons{
+      margin-top: 29px;
+    }
+  }
+
+  .catalog-detail{
+    margin-top: 36px;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .catalog-item{
+    padding-bottom: 30px;
+    &__inner{
+      display: block;
+      margin-top: 14px;
+      position: relative;
+    }
+    &__left{
+      width: 100%;
+      margin: 0 0 30px;
+    }
+    &__right{
+      max-width: 100%;
+    }
+    &__img{
+      max-width: 240px;
+    }
+    &__weight{
+      margin-top: 8px;
+    }
+    &__info{
+      margin-top: 16px;
+    }
+    &__price{
+      &-num{
+        margin-top: 8px;
+      }
+    }
+    &__has{
+      margin-top: -40px;
+    }
+    &__buttons{
+      margin-top: 12px;
+    }
+    &__btn{
+      width: 100%;
+      height: 42px;
+    }
+    &__favourite{
+      position: absolute;
+      right: 20px;
+      top: 24px;
+      width: 24px;
+      height: 24px;
+      border: none;
+      &:hover{
+        background-color: transparent;
+        path{
+          fill: $primary;
+        }
+      }
+    }
+  }
+
+  .catalog-detail{
+    margin-top: 26px;
+  }
+}

@@ -308,6 +308,10 @@
 
 .collection {
     padding: 60px 0;
+    overflow: hidden;
+    &--slider{
+        padding-bottom: 20px;
+    }
     &__top {
         display: flex;
         align-items: center;
@@ -321,6 +325,43 @@
     }
     .product-card {
         height: 100%;
+    }
+    &__slider{
+
+    }
+    .slick{
+        &-list{
+            padding: 40px;
+            width: calc(100% + 104px);
+            margin-left: -52px;
+        }
+        &-slide{
+            margin: 0 12px;
+        }
+        &-prev,
+        &-next{
+            z-index: 3;
+            width: 36px;
+            height: 36px;
+            background-size: 12px auto;
+        }
+        &-next{
+            right: -40px;
+        }
+        &-prev{
+            left: -40px;
+        }
+        &-disabled{
+            opacity: 0;
+        }
+        @media screen and (min-width: 1300px){
+            &-slide{
+                opacity: 0;
+            }
+            &-active{
+                opacity: 1;
+            }
+        }
     }
 }
 
@@ -526,25 +567,7 @@
         &-slide {
             margin: 0 35px;
         }
-        &-prev,
-        &-next {
-            width: 34px;
-            height: 51px;
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background-position: center;
-            background-repeat: no-repeat;
-            font-size: 0;
-        }
-        &-prev {
-            left: 0;
-            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='19' height='35' viewBox='0 0 19 35' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M17 2L3 17.5L17 33' stroke='black' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E");
-        }
-        &-next {
-            right: 0;
-            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='19' height='35' viewBox='0 0 19 35' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2 2L16 17.5L2 33' stroke='black' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E");
-        }
+
         &-disabled {
             opacity: 0.6;
         }
@@ -634,8 +657,22 @@
             gap: 30px;
         }
     }
+
     .work-with {
         padding: 90px 0 120px;
+    }
+
+    .collection{
+        .slick{
+            &-list{
+                padding: 30px 90px;
+                width: calc(100% + 204px);
+                margin-left: -102px;
+            }
+            &-slide{
+                width: 292px;
+            }
+        }
     }
 }
 
@@ -658,11 +695,13 @@
             }
         }
     }
+
     .collection {
         &__grid {
             grid-template-columns: repeat(3, 1fr);
         }
     }
+
     .why {
         &__inner {
             display: flex;
@@ -689,6 +728,7 @@
             z-index: 2;
         }
     }
+
     .loyalty {
         margin-top: 110px;
         &__wrap {
@@ -711,6 +751,7 @@
             right: -12px;
         }
     }
+
     .become-client {
         padding: 75px 0;
         margin-top: 75px;
@@ -788,6 +829,7 @@
             margin-top: 15px;
         }
     }
+
     .catalog-index {
         padding: 35px 0;
         &__grid {
@@ -829,6 +871,7 @@
             }
         }
     }
+
     .collection {
         padding: 35px 0 10px;
         &__grid {
@@ -856,6 +899,7 @@
     .why {
         padding: 35px 0;
     }
+
     .work-with {
         padding: 60px 0 70px;
         &__inner {
@@ -878,6 +922,7 @@
             margin-top: 40px;
         }
     }
+
     .clients {
         padding: 35px 0;
         margin-top: 35px;
@@ -942,6 +987,7 @@
             }
         }
     }
+
     .collection {
         padding: 25px 0;
         &__link {
@@ -956,12 +1002,22 @@
                 }
             }
         }
+        .slick{
+            &-list{
+                padding: 20px 8px;
+                width: calc(100% + 40px);
+                margin-left: -12px;
+            }
+
+
+        }
     }
     .why {
         &__info {
             margin-left: 50px;
         }
     }
+
     .clients {
         padding: 25px 0;
         margin-top: 25px;
@@ -1084,12 +1140,31 @@
             margin-top: 28px;
         }
     }
+
     .collection {
+        &--slider{
+            padding-bottom: 0;
+        }
+        .display3{
+            font-size: 20px;
+        }
         .product-card {
             width: 148px;
             margin-right: 14px;
         }
+        .slick{
+            &-list{
+                padding: 20px 13px 30px;
+                width: calc(100% + 40px);
+                margin-left: -12px;
+            }
+            &-slide{
+                width: 148px;
+                margin: 0 7px;
+            }
+        }
     }
+
     .why {
         padding: 25px 0;
         &__inner {

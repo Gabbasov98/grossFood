@@ -62,6 +62,50 @@
     }
 }
 
+.favourite-btn{
+    width: 44px;
+    height: 44px;
+    .svg2{
+        display: none;
+    }
+    &:hover{
+        path{
+            stroke: none;
+            fill: #fff;
+        }
+    }
+    &--active{
+        .svg1{
+            display: none;
+        }
+        .svg2{
+            display: unset;
+        }
+    }
+}
+
+.slick{
+    &-prev,
+    &-next {
+        width: 34px;
+        height: 51px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-position: center;
+        background-repeat: no-repeat;
+        font-size: 0;
+    }
+    &-prev {
+        left: 0;
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='19' height='35' viewBox='0 0 19 35' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M17 2L3 17.5L17 33' stroke='black' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E");
+    }
+    &-next {
+        right: 0;
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='19' height='35' viewBox='0 0 19 35' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2 2L16 17.5L2 33' stroke='black' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E");
+    }
+}
+
 @media screen and (max-width: 1024px) {
     .mbtn-green {
         width: 194px;

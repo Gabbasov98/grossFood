@@ -1,0 +1,121 @@
+<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"ru", "title":"Главная", "description":"", "keywords":"",})
+
+<body>
+    <div class="wrapper">
+        @@include('components/page-blocks/_header.html')
+        <main class="content">
+
+            <section class="bonus">
+                <div class="container">
+                    <div class="bonus__inner">
+                        <img src="img/bonus.svg" alt="" class="bonus__bg">
+                        <div class="breadcrumbs">
+                            <a href="" class="breadcrumbs__item">Главная</a>
+                            <span class="breadcrumbs__item">Программа лояльности</span>
+                        </div>
+                        <div class="bonus__info">
+                            <div class="bonus__title display2">Программа лояльности «ГРОСС ФУД»</div>
+                            <div class="bonus__desc">
+                                <p>Мы стремимся экономить деньги клиента, поэтому даём конкурентоспособные цены, скидки и специальные предложения. В благодарность за ваше доверие мы разработали и запустили систему лояльности. За каждую покупку начисляются бонусные баллы, которые можно тратить на оплату следующих заказов или получать подарки.</p>
+                                <p>Участие в программе лояльности - весомый повод стать нашим постоянным клиентом. Мы дорожим своей репутацией и никого не обманываем, поэтому разработали максимально прозрачные условия получения и применения бонусов:</p>
+                            </div>
+                        </div>
+
+                        <div class="get-bonus">
+                            <div class="bonus__subtitle display3">Как получить бонусы</div>
+                            <div class="get-bonus__items">
+                                <div class="get-bonus__item">
+                                    <div class="get-bonus__num">
+                                        <span>1</span>
+                                        <svg width="102" height="102" viewBox="0 0 102 102" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="51" cy="51" r="47" fill="#75A36D" stroke="white" stroke-width="8"/>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M51 94C74.7482 94 94 74.7482 94 51H51V8C27.2518 8 8 27.2518 8 51C8 74.7482 27.2518 94 51 94Z" fill="#DEE7E9"/>
+                                            <circle cx="51" cy="51" r="33" fill="white"/>
+                                        </svg>
+                                    </div>
+                                    <div class="get-bonus__text">Вы совершаете заказ в компании «ГРОСС ФУД» - через сайт интернет-магазина или по телефону.</div>
+                                </div>
+                                <div class="get-bonus__item">
+                                    <div class="get-bonus__num">
+                                        <span>2</span>
+                                        <svg width="102" height="102" viewBox="0 0 102 102" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="51" cy="51" r="47" fill="#75A36D" stroke="white" stroke-width="8"/>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M51 94V8C27.2518 8 8 27.2518 8 51C8 74.7482 27.2518 94 51 94Z" fill="#DEE7E9"/>
+                                            <circle cx="51" cy="51" r="33" fill="white"/>
+                                        </svg>
+                                    </div>
+                                    <div class="get-bonus__text">Оплачиваете товары любым удобным способом (банковским переводом, картой или наличными).</div>
+                                </div>
+                                <div class="get-bonus__item">
+                                    <div class="get-bonus__num">
+                                        <span>3</span>
+                                        <svg width="102" height="102" viewBox="0 0 102 102" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="51" cy="51" r="47" fill="#75A36D" stroke="white" stroke-width="8"/>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M51 51V8C27.2518 8 8 27.2518 8 51H51Z" fill="#DEE7E9"/>
+                                            <circle cx="51" cy="51" r="33" fill="white"/>
+                                        </svg>
+                                    </div>
+                                    <div class="get-bonus__text">После получения оплаты мы начисляем вам бонусы в размере от 2,5% до 10% от суммы покупки.</div>
+                                </div>
+                                <div class="get-bonus__item">
+                                    <div class="get-bonus__num">
+                                        <span>4</span>
+                                        <svg width="102" height="102" viewBox="0 0 102 102" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="51" cy="51" r="47" fill="#75A36D" stroke="white" stroke-width="8"/>
+                                            <circle cx="51" cy="51" r="33" fill="white"/>
+                                        </svg>
+                                    </div>
+                                    <div class="get-bonus__text">Бонусы конвертируются в настоящие деньги (рубли) по курсу 10 баллов = 1 российский рубль.</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="use-bonus">
+                            <div class="bonus__subtitle display3">Как применить бонусы</div>
+                            <div class="use-bonus__desc">
+                                <p>Накопленные баллы можно потратить двумя способами:</p>
+                                <p>Получить скидку до 50% на любой из следующих заказов;</p>
+                                <p>Использовать 99% баллов для получения подарка от компании «ГРОСС ФУД». (Список презентов можно уточнить на сайте или у вашего менеджера).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="gift">
+                <div class="container">
+                    <div class="gift__title display2">Подарки, участвующие в программе лояльности</div>
+                    <div class="gift__items">
+                        @@include('components/cards/_gift-card.html',{"img":"gift","title":"Клавиатура беспроводная Loooooo"})
+                        @@include('components/cards/_gift-card.html',{"img":"gift2","title":"Ноутбук Apple MacBook Air 13"})
+                        @@include('components/cards/_gift-card.html',{"img":"gift3","title":"Фен Dyson Supersonic HD033333"})
+                        @@include('components/cards/_gift-card.html',{"img":"gift4","title":"Игровая мышь Logitech G5022222"})
+                        @@include('components/cards/_gift-card.html',{"img":"gift5","title":"Электрочайник Tefal Loft Krereer"})
+                        @@include('components/cards/_gift-card.html',{"img":"gift6","title":"Умная колонка JBL Link Musidsdsd"})
+                        @@include('components/cards/_gift-card.html',{"img":"gift7","title":"Смарт-часы Lenovo S2 Black"})
+                        @@include('components/cards/_gift-card.html',{"img":"gift8","title":"Наушники True Wireless Sassss"})
+                        @@include('components/cards/_gift-card.html',{"img":"gift9","title":"Смартфон Huawei Mate 40 Prdfdffd"})
+                        @@include('components/cards/_gift-card.html',{"img":"gift10","title":"Кресло офисное Brabix Fusiofdfdfd"})
+                    </div>
+                </div>
+            </section>
+
+            <section class="condition">
+                <div class="container">
+                    <div class="condition__title display3">Условия программы лояльности «ГРОСС ФУД»:</div>
+                    <div class="condition__desc">
+                        <p>Баллы, неиспользованные в течение 365 дней, сгорают. Условие начисления бонусных баллов – поступление оплаты заказа на счёт организатора программы. При покупке товара со скидкой по бонусным баллам дополнительные не начисляются. Подарок предоставляется на выбор из списка, предложенного организатором. Использование баллов другим участником программы запрещено. Организатор оставляет за собой право вносить изменения в положение программы.</p>
+                        <p>Получайте приятную выгоду вместе с «ГРОСС ФУД». Наша компания – одна из немногих в сегменте b2b, что практикует систему лояльности для своих клиентов.
+                            Мы будем рады вашему участию в программе. Чтобы вступить или уточнить интересующую информацию, свяжитесь с менеджером по телефону или e-mail.</p>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        @@include('components/page-blocks/_footer.html')
+        </div>
+
+        @@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

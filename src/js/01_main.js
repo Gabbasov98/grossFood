@@ -9,4 +9,8 @@ $(document).ready(function() {
         $(this).parents(".my-select").addClass("my-select--selected")
     })
 
+    $(".favourite-btn").click(function () {
+        $(this).toggleClass("favourite-btn--active")
+    })
+
 });

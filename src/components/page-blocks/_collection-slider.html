@@ -1,0 +1,28 @@
+<div class='container'>
+    <div class='collection__top'>
+        <div class="collection__title display3">@@title</div>
+        <a href="" class="catalog-index__link link-arrow">
+            <span>Смотреть все</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 18L15 12L9 6" stroke="black" stroke-linecap="round"/>
+            </svg>
+        </a>
+    </div>
+    <div class="collection__slider">
+        <div class="product-card">
+            @@include('../cards/_product-card.html',{"sale":""})
+        </div>
+        <div class="product-card">
+            @@include('../cards/_product-card.html',{"sale":""})
+        </div>
+        <div class="product-card">
+            @@include('../cards/_product-card.html',{"sale":"false"})
+        </div>
+        <div class="product-card">
+            @@include('../cards/_product-card.html',{"sale":""})
+        </div>
+        <div class="product-card">
+            @@include('../cards/_product-card.html',{"sale":""})
+        </div>
+    </div>
+</div>

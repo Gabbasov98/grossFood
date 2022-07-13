@@ -1,0 +1,195 @@
+@import "../vars";
+.bonus{
+  padding-bottom: 75px;
+  &__inner{
+    position: relative;
+  }
+  &__bg{
+    position: absolute;
+    bottom: 90px;
+    right: 0;
+    width: 734px;
+    display: block;
+  }
+  &__info{
+    margin-top: 28px;
+  }
+  &__desc{
+    margin-top: 30px;
+    max-width: 715px;
+  }
+}
+
+.get-bonus{
+  margin-top: 60px;
+  &__items{
+    margin-top: 45px;
+    padding-left: 20px;
+  }
+  &__item{
+    display: flex;
+    &:not(:last-child){
+      margin-bottom: 60px;
+    }
+    &:last-child{
+      .get-bonus__num{
+        &::after{
+          display: none;
+        }
+      }
+    }
+  }
+  &__num{
+    margin-right: 80px;
+    flex-shrink: 0;
+    position: relative;
+    font-size: 36px;
+    font-weight: 600;
+    span{
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
+    }
+    &::after,
+    &::before{
+      content: '';
+      position: absolute;
+      width: 55px;
+      height: 3px;
+      left: 100%;
+      top: 49px;
+      margin-left: 10px;
+      background: #DEE7E9;
+    }
+    &::after{
+      height: 55px;
+      width: 3px;
+      left: 49px;
+      top: 100%;
+      margin: 0;
+    }
+  }
+  &__text{
+    padding-top: 17px;
+    max-width: 266px;
+    font-size: 16px;
+    line-height: 125%;
+  }
+}
+
+.use-bonus{
+  margin-top: 70px;
+  &__desc{
+    margin-top: 22px;
+    max-width: 715px;
+  }
+}
+
+.gift{
+  padding: 75px 0 40px;
+  &__items{
+    display: grid;
+    grid-template-columns: repeat(4, calc(25% - (90px / 4)));
+    gap: 30px;
+    margin-top: 62px;
+  }
+}
+
+.condition{
+  padding: 40px 0;
+  &__desc{
+    margin-top: 22px;
+  }
+}
+
+@media screen and (max-width: 1100px){
+  .gift{
+    &__items{
+      grid-template-columns: repeat(3, calc(33.33% - (50px / 3)));
+      gap:43px 25px;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px){
+  .bonus{
+    padding-bottom: 35px;
+    &__bg{
+      width: 486px;
+      bottom: 200px;
+    }
+  }
+
+  .gift{
+    padding: 35px 0 30px;
+  }
+
+  .condition{
+    padding: 30px 0;
+  }
+}
+
+
+@media screen and (max-width: 768px){
+  .bonus{
+    padding-bottom: 25px;
+    &__bg{
+      display: none;
+    }
+    &__info{
+      margin-top: 12px;
+    }
+    &__desc{
+      margin-top: 12px;
+    }
+  }
+
+  .get-bonus{
+    margin-top: 40px;
+    &__items{
+      width: calc(100% + 28px);
+      margin: 25px 0 0 -28px;
+    }
+    &__item{
+      align-items: center;
+      &:not(:last-child){
+        margin-bottom: 25px;
+      }
+    }
+    &__text{
+      padding: 0;
+    }
+    &__num{
+      &::after{
+        transform: translateY(-5px);
+      }
+    }
+  }
+
+  .use-bonus{
+    margin-top: 40px;
+  }
+
+  .gift{
+    padding: 25px 0 20px;
+    &__items{
+      margin-top: 22px;
+      grid-template-columns: repeat(3, calc(33.33% - (32px / 3)));
+      gap:16px;
+    }
+  }
+
+  .condition{
+    padding: 20px 0;
+  }
+}
+
+
+@media screen and (max-width: 576px){
+  .gift{
+    &__items{
+      grid-template-columns: repeat(2, calc(50% - 8px));
+    }
+  }
+}

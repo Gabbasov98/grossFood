@@ -50,40 +50,8 @@ function clientSlider() {
         ]
     });
 }
-// function catalogSlider() {
-//     $('.catalog-index__grid').slick({
-//         slidesToShow: 1,
-//         slidesToScroll: 1,
-//         variableWidth: true,
-//         speed: 500,
-//         arrows: false
-//     });
-// }
-
-// function collectionSlider() {
-//     $('.collection__grid').slick({
-//         slidesToShow: 1,
-//         slidesToScroll: 1,
-//         variableWidth: true,
-//         speed: 500,
-//         arrows: false
-//     });
-// }
-
 
 
 mainSlider()
 clientSlider()
 
-// if (window.innerWidth < 800) {
-//     catalogSlider()
-// } else {
-//     function catalogSlider() {}
-//     catalogSlider()
-// }
-// if (window.innerWidth < 1200) {
-//     collectionSlider()
-// } else {
-//     function collectionSlider() {}
-//     collectionSlider()
-// }
