@@ -1,4 +1,4 @@
-@import "vars";
+@import "../vars";
 .header {
     position: sticky;
     top: 0;
@@ -570,7 +570,7 @@
             display: flex;
         }
         &__burger {
-            margin-left: 20px;
+            margin-left: 12px;
         }
         &__catalog-btn {
             width: 120px;
@@ -603,7 +603,7 @@
             margin: 0;
             z-index: 5;
             position: absolute;
-            right: 102px;
+            right: 85px;
             bottom: 85px;
             font-size: 0;
             width: 28px;
@@ -764,7 +764,7 @@
     }
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 370px) {
     .header {
         &__search {
             &::before {
@@ -788,7 +788,7 @@
             bottom: 87px;
         }
         &__catalog-btn {
-            width: 90px;
+            width: 105px;
             border-radius: 4px;
             margin-left: 12px;
             svg {
