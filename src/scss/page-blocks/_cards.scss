@@ -115,16 +115,8 @@
     border-radius: 8px;
     padding: 53px 36px 30px;
     &__img{
-        height: 140px;
-        position: relative;
-        overflow: hidden;
         img{
-            position: absolute;
             width: 100%;
-            height: 100%;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%,-50%);
             object-fit: cover;
         }
     }
@@ -155,9 +147,6 @@
 @media screen and (max-width: 1024px){
     .gift-card{
         padding: 18px;
-        &__img{
-            height: 120px;
-        }
         &__title{
             margin-top: 4px;
             line-height: 112%;
@@ -172,19 +161,8 @@
     }
 }
 
-@media screen and (max-width: 880px){
-    .gift-card{
-        &__img{
-            height: 100px;
-        }
-    }
-}
-
 @media screen and (max-width: 768px){
     .gift-card{
-        &__img{
-            height: 90px;
-        }
         &__title{
             font-size: 14px;
         }
@@ -252,36 +230,6 @@
                 width: 16px;
                 height: auto;
             }
-        }
-    }
-
-    .gift-card{
-        &__img{
-            height: 130px;
-        }
-    }
-}
-
-@media screen and (max-width: 450px){
-    .gift-card{
-        &__img{
-            height: 90px;
-        }
-    }
-}
-
-@media screen and (max-width: 400px){
-    .gift-card{
-        &__img{
-            height:80px;
-        }
-    }
-}
-
-@media screen and (max-width: 370px){
-    .gift-card{
-        &__img{
-            height:75px;
         }
     }
 }
