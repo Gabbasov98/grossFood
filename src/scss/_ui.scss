@@ -161,6 +161,43 @@ input {
     }
 }
 
+.cartcalc{
+    width: 132px;
+    display: flex;
+    input{
+        font-weight: 700;
+        font-size: 20px;
+        text-align: center;
+        width: 100%;
+        flex-grow: 1;
+        border: none;
+        border-top: 2px solid #D6D6D6;
+        border-bottom: 2px solid #D6D6D6;
+    }
+    button{
+        font-weight: 700;
+        font-size: 20px;
+        width: 44px;
+        height: 44px;
+        flex-shrink: 0;
+    }
+    .ccalc-minus{
+        border-radius: 8px 0px 0px 8px;
+    }
+    .ccalc-plus{
+        border-radius: 0px 8px 8px 0px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .cartcalc{
+        button{
+            width: 42px;
+            height: 42px;
+        }
+    }
+}
+
 @media screen and (max-width: 576px) {
     .mfg {
         label {

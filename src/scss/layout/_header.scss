@@ -527,6 +527,7 @@
 
 @media screen and (max-width: 576px) {
     .header {
+        overflow: hidden;
         box-shadow: none;
         background-color: transparent;
         &::before{
@@ -790,7 +791,8 @@
         &__catalog-btn {
             width: 105px;
             border-radius: 4px;
-            margin-left: 12px;
+            margin-left: auto;
+            margin-right: 10px;
             svg {
                 margin-right: 4px;
             }
