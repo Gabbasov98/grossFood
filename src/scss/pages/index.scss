@@ -284,6 +284,10 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
+            &-mob,
+            &-tablet{
+                display: none;
+            }
         }
         &-title {
             background: linear-gradient(180deg, rgba(6, 6, 6, 0) 0%, #060606 100%);
@@ -844,6 +848,15 @@
                 line-height: 133%;
                 height: 46px;
             }
+            &-img{
+                &-desktop,
+                &-mob{
+                    display: none;
+                }
+                &-tablet{
+                    display: unset;
+                }
+            }
         }
         &__meat,
         &__fish {
@@ -1065,6 +1078,20 @@
         }
         &__btn {
             margin-top: 30px;
+        }
+    }
+
+    .catalog-index{
+        &__item{
+            &-img{
+                &-desktop,
+                &-tablet{
+                    display: none;
+                }
+                &-mob{
+                    display: block;
+                }
+            }
         }
     }
 }
