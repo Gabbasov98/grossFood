@@ -31,5 +31,5 @@ $(".catalog-detail__tab").click(function () {
 collectionSlider()
 
 $(".catalog-item__btn").click(function () {
-    $(this).toggleClass("catalog-item__btn--active")
+    $(this).addClass("catalog-item__btn--active")
 })

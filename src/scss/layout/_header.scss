@@ -334,6 +334,14 @@
     }
 }
 
+@media screen and (max-width: 1250px){
+    .nav{
+        &__item{
+            margin-left: 10px;
+        }
+    }
+}
+
 @media screen and (max-width: 1200px) {
     .header {
         &__phone {
