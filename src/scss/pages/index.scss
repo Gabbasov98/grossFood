@@ -1165,10 +1165,14 @@
         }
         &__desc {
             line-height: 130%;
-            margin-top: 14px;
+            margin-top: 20px;
         }
         &__link {
             margin-top: 28px;
+        }
+        &__subtitle{
+            line-height: 112%;
+            font-size: 32px;
         }
     }
 

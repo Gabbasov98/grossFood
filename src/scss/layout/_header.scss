@@ -589,7 +589,8 @@
             height: 42px;
             font-size: 14px;
             color: #727272;
-            margin-left: 32px;
+            margin-left: auto;
+            transform: translateX(-10px);
             &-icon,
             &-icon2 {
                 width: 16px;
