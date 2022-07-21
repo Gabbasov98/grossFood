@@ -5,12 +5,12 @@ function collectionSlider() {
         speed: 500,
         infinite: false,
         responsive: [
-
             {
                 breakpoint: 1300,
                 settings: {
                     variableWidth: true,
-                    arrows: false
+                    arrows: false,
+                    infinite: true
                 }
             },
         ]

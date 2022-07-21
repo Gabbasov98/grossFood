@@ -4,7 +4,7 @@ function mainSlider() {
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
-        autoplay: true,
+        // autoplay: true,
         autoplaySpeed: 5000,
         speed: 700,
         fade: true,

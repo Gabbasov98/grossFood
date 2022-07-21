@@ -582,7 +582,7 @@
             display: flex;
         }
         &__burger {
-            margin-left: 12px;
+            margin-left: 16px;
         }
         &__catalog-btn {
             width: 120px;
@@ -614,9 +614,9 @@
         }
         &__phone {
             margin: 0;
-            z-index: 5;
+            z-index: 7;
             position: absolute;
-            right: 85px;
+            right: 90px;
             bottom: 85px;
             font-size: 0;
             width: 28px;

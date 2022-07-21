@@ -1,8 +1,7 @@
-@import "vars";
+@import "../vars";
 .footer {
     padding: 50px 0 20px;
     background: #F9F9F9;
-    margin-top: 40px;
     &__inner {
         display: flex;
         justify-content: space-between;
@@ -169,7 +168,6 @@
 
 @media screen and (max-width: 576px) {
     .footer {
-        margin-top: 15px;
         padding: 17px 0 30px;
         &__inner {
             grid-template-columns: 1fr;
