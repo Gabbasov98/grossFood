@@ -12,11 +12,19 @@
         <div class="product-card__num">1 шт</div>
         @@if(sale === "false"){
         <div class="product-card__price">266.2₽ </div>
-        } @@if(sale !== "false"){
+        } @@if(sale === ""){
         <div class="product-card__price-old">266.2₽ </div>
         <div class="product-card__price-new">266.2₽ </div>}
+        @@if(sale === "order"){
+        <div class="product-card__order">Под заказ</div>
+        }
     </div>
     <button class="product-card__cart mbtn mbtn-green">
         <img src="img/cart.svg" alt="">
     </button>
+    <div class="cartcalc">
+        <button class="ccalc-minus mbtn mbtn-green">-</button>
+        <input type="text" value="1">
+        <button class="ccalc-plus mbtn mbtn-green">+</button>
+    </div>
 </div>

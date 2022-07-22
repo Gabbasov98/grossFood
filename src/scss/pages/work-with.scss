@@ -295,6 +295,10 @@
       width: calc(100% + 160px);
       margin-left: -80px;
       padding: 0 80px;
+      &::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+      }
     }
     &__item{
       margin: 0 12px 0 0;

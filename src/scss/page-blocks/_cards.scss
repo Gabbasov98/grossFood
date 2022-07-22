@@ -83,9 +83,18 @@
         line-height: 143%;
         color: #727272;
     }
+    .cartcalc{
+        display: none;
+    }
     &__cart {
         width: 44px;
         height: 44px;
+        &--active{
+            display: none;
+            &~.cartcalc{
+                display: flex;
+            }
+        }
     }
     &__price {
         font-weight: 700;
@@ -106,6 +115,11 @@
             margin-top: 3px;
             color: $red;
         }
+    }
+    &__order{
+        font-size: 16px;
+        line-height: 125%;
+        padding: 12px 0;
     }
 }
 

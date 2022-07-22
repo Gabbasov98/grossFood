@@ -339,8 +339,18 @@
             width: calc(100% + 104px);
             margin-left: -52px;
         }
+        &-track{
+            display: flex;
+            align-items: stretch;
+        }
         &-slide{
+            height: auto;
             margin: 0 12px;
+            display: flex;
+            flex-direction: column;
+            &>div{
+                flex-grow: 1;
+            }
         }
         &-prev,
         &-next{
@@ -677,6 +687,13 @@
             }
             &-slide{
                 width: 292px;
+                opacity: 0;
+            }
+            &-active{
+                opacity: 1;
+                &~.slick-slide{
+                    opacity: 1;
+                }
             }
         }
     }
