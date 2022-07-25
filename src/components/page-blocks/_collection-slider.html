@@ -9,20 +9,34 @@
         </a>
     </div>
     <div class="collection__slider">
-        <div class="product-card">
-            @@include('../cards/_product-card.html',{"sale":""})
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide product-card">
+                    @@include('../cards/_product-card.html',{"sale":""})
+                </div>
+                <div class="swiper-slide product-card">
+                    @@include('../cards/_product-card.html',{"sale":"order"})
+                </div>
+                <div class="swiper-slide product-card">
+                    @@include('../cards/_product-card.html',{"sale":"false"})
+                </div>
+                <div class="swiper-slide product-card">
+                    @@include('../cards/_product-card.html',{"sale":""})
+                </div>
+                <div class="swiper-slide product-card">
+                    @@include('../cards/_product-card.html',{"sale":""})
+                </div>
+            </div>
         </div>
-        <div class="product-card">
-            @@include('../cards/_product-card.html',{"sale":"order"})
+        <div class="swiper-button-prev">
+            <svg width="19" height="35" viewBox="0 0 19 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17 2L3 17.5L17 33" stroke="#878787" stroke-width="3" stroke-linecap="round"/>
+            </svg>
         </div>
-        <div class="product-card">
-            @@include('../cards/_product-card.html',{"sale":"false"})
-        </div>
-        <div class="product-card">
-            @@include('../cards/_product-card.html',{"sale":""})
-        </div>
-        <div class="product-card">
-            @@include('../cards/_product-card.html',{"sale":""})
+        <div class="swiper-button-next">
+            <svg width="19" height="35" viewBox="0 0 19 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 2L16 17.5L2 33" stroke="black" stroke-width="3" stroke-linecap="round"/>
+            </svg>
         </div>
     </div>
 </div>

@@ -2,7 +2,7 @@ const plugins = [
     'src/libs/css/slick.css',
     'src/libs/css/nice-select.css',
     // 'node_modules/bootstrap/dist/css/bootstrap.css',
-    // 'node_modules/swiper/swiper-bundle.css',
+    'node_modules/swiper/swiper-bundle.css',
 
 ];
 

@@ -331,49 +331,43 @@
         height: 100%;
     }
     &__slider{
-
+        margin-top: 30px;
+        position: relative;
     }
-    .slick{
-        &-list{
-            padding: 40px;
-            width: calc(100% + 104px);
-            margin-left: -52px;
+    .swiper{
+        &-container{
+
         }
-        &-track{
-            display: flex;
+        &-wrapper{
             align-items: stretch;
         }
         &-slide{
             height: auto;
-            margin: 0 12px;
-            display: flex;
-            flex-direction: column;
-            &>div{
-                flex-grow: 1;
-            }
-        }
-        &-prev,
-        &-next{
-            z-index: 3;
-            width: 36px;
-            height: 36px;
-            background-size: 12px auto;
-        }
-        &-next{
-            right: -40px;
-        }
-        &-prev{
-            left: -40px;
-        }
-        &-disabled{
             opacity: 0;
-        }
-        @media screen and (min-width: 1300px){
-            &-slide{
-                opacity: 0;
-            }
             &-active{
                 opacity: 1;
+            }
+            &-next{
+                opacity: 1;
+                &+.swiper-slide,
+                &+.swiper-slide+.swiper-slide{
+                    opacity: 1;
+                }
+            }
+        }
+        &-button{
+            &-prev,
+            &-next{
+                z-index: 3;
+                width: 36px;
+                height: 36px;
+                background-size: 12px auto;
+            }
+            &-next{
+                right: -40px;
+            }
+            &-prev{
+                left: -40px;
             }
         }
     }
@@ -679,20 +673,18 @@
     }
 
     .collection{
-        .slick{
-            &-list{
-                padding: 30px 90px;
-                width: calc(100% + 204px);
-                margin-left: -102px;
-            }
+        &__slider{
+            //overflow: hidden;
+        }
+        .swiper{
             &-slide{
                 width: 292px;
-                opacity: 0;
-            }
-            &-active{
                 opacity: 1;
-                &~.slick-slide{
-                    opacity: 1;
+            }
+            &-button{
+                &-prev,
+                &-next{
+                    display: none;
                 }
             }
         }
@@ -1035,15 +1027,6 @@
                 }
             }
         }
-        .slick{
-            &-list{
-                padding: 20px 8px;
-                width: calc(100% + 40px);
-                margin-left: -12px;
-            }
-
-
-        }
     }
 
     .why {
@@ -1200,20 +1183,12 @@
         .display3{
             font-size: 20px;
         }
+        &__slider{
+            margin-top: 20px;
+        }
         .product-card {
             width: 148px;
             margin-right: 14px;
-        }
-        .slick{
-            &-list{
-                padding: 20px 13px 30px;
-                width: calc(100% + 40px);
-                margin-left: -12px;
-            }
-            &-slide{
-                width: 148px;
-                margin: 0 7px;
-            }
         }
     }
 
