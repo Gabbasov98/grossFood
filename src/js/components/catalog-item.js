@@ -31,10 +31,14 @@ function collectionSliders() {
             },
             breakpoints: {
                 320: {
-                    slidesPerView: 1.7,
+                    slidesPerView: 1.9,
                     spaceBetween: 14
                 },
-                420: {
+                340: {
+                    slidesPerView: 2.1,
+                    spaceBetween: 14
+                },
+                380: {
                     slidesPerView: 2.2,
                     spaceBetween: 14
                 },

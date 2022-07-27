@@ -13,6 +13,9 @@
         &-inner {
             padding: 120px 0;
         }
+        &-bg{
+            display: block;
+        }
     }
     &__slide1 {
         position: relative;
@@ -1248,9 +1251,30 @@
         }
         &__btn {
             margin-top: 17px;
+            order: 7;
         }
         &__des {
             font-size: 14px;
+        }
+        .mfg{
+            &--1{
+                order: 1;
+            }
+            &--2{
+                order: 2;
+            }
+            &--3{
+                order: 3;
+            }
+            &--4{
+                order: 4;
+            }
+            &--5{
+                order: 5;
+            }
+            &--6{
+                order: 6;
+            }
         }
     }
     .clients {

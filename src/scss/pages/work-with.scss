@@ -44,12 +44,18 @@
     color: #fff;
     position: relative;
     min-height: 600px;
+    &--hunset{
+      min-height: unset;
+    }
   }
   &__title{
     max-width: 500px;
   }
   &__desc{
     margin-top: 30px;
+    p{
+      line-height: 140%;
+    }
   }
   &__btn{
     margin-top: 40px;

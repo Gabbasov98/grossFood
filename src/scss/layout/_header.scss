@@ -258,6 +258,8 @@
 }
 
 .header-catalog {
+    max-height: calc(100vh - 125px);
+    overflow-y: auto;
     position: absolute;
     left: 155px;
     top: 100%;
@@ -726,6 +728,7 @@
 
     .header-catalog {
         width: 100%;
+        max-height: calc(100vh - 130px);
         height: calc(100vh - 130px);
         overflow: hidden;
         position: fixed;
