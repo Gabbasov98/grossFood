@@ -14,9 +14,9 @@ $(document).ready(function() {
         $(this).toggleClass("favourite-btn--active")
     })
 
-    // $(".product-card__cart").click(function () {
-    //     $(this).addClass("product-card__cart--active")
-    // })
+    $(".product-card__cart").click(function () {
+        $(this).addClass("product-card__cart--active")
+    })
 
 });
 

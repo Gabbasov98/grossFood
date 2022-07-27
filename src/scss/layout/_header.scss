@@ -260,18 +260,12 @@
 .header-catalog {
     max-height: calc(100vh - 125px);
     overflow-y: auto;
-    position: absolute;
     left: 155px;
     top: 100%;
     opacity: 0;
     pointer-events: none;
-    position: absolute;
-    width: 394px;
+    width: 410px;
     max-width: 100%;
-    padding: 16px 20px;
-    background: #FFFFFF;
-    box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.05);
-    border-radius: 0px 0px 8px 8px;
     z-index: 5;
     display: block;
     position: absolute;
@@ -284,6 +278,16 @@
     }
     &__back {
         display: none;
+    }
+    &__items{
+        box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.05);
+        border-radius: 0px 0px 8px 8px;
+        width: 205px;
+        height: 500px;
+        padding: 16px 20px;
+        background: #FFFFFF;
+        z-index: 2;
+        position: relative;
     }
     &__item {
         margin: 0;
@@ -298,7 +302,6 @@
         line-height: 18px;
         display: flex;
         align-items: center;
-        width: 165px;
         background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='12' height='12' viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 10L8 6L4 2' stroke='%23727272' stroke-linecap='round'/%3E%3C/svg%3E");
         background-repeat: no-repeat;
         background-position: right center;
@@ -306,6 +309,9 @@
             cursor: pointer;
             color: $black;
             background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='12' height='12' viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 10L8 6L4 2' stroke='%23101010' stroke-linecap='round'/%3E%3C/svg%3E");
+        }
+        &--noarrow{
+            background-image: none !important;
         }
         &--active {
             color: $black;
@@ -316,14 +322,18 @@
         }
     }
     &__hidden {
-        top: 16px;
-        right: 20px;
-        width: calc(100% - 205px);
-        padding: 0 0 0 30px;
+        border-radius: 0 0 8px 0;
+        padding: 16px 20px 16px 30px;
+        background-color: #fff;
+        top: 0;
+        width: 205px;
+        left: 100%;
+        height: 100%;
+        //padding: 0 0 0 30px;
         position: absolute;
         opacity: 0;
         pointer-events: none;
-        transform: translate()
+        transform: translate(-14px, 0);
     }
     &__link {
         color: $black;
@@ -728,7 +738,7 @@
 
     .header-catalog {
         width: 100%;
-        max-height: calc(100vh - 130px);
+        max-height: unset;
         height: calc(100vh - 130px);
         overflow: hidden;
         position: fixed;
@@ -739,8 +749,14 @@
         border-radius: 0;
         transform: translateX(-100%);
         overflow-y: auto;
+        background-color: #fff;
         &--active {
             transform: translateX(0);
+        }
+        &__items{
+            width: 100%;
+            height: unset;
+            box-shadow: none;
         }
         &__item {}
         &__show {
@@ -749,6 +765,7 @@
             line-height: 18px;
         }
         &__hidden {
+            left: unset;
             right: 0;
             top: 0;
             z-index: 2;
