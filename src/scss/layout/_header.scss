@@ -798,14 +798,20 @@
     }
 }
 
-@media screen and (max-width: 370px) {
-    .header {
+@media screen and (max-width: 380px){
+    .header{
         &__search {
             &::before {
                 width: calc(100% + 20px);
                 left: -10px;
             }
         }
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .header {
+
         &__burger {
             margin-left: 15px;
         }
