@@ -547,7 +547,7 @@
 
 @media screen and (max-width: 576px) {
     .header {
-        overflow: hidden;
+        //overflow: hidden;
         box-shadow: none;
         background-color: transparent;
         &::before{
@@ -558,7 +558,7 @@
             left: 0;
             top: 0;
             background-color: #fff;
-            box-shadow: 0px 4px 30px rgba(43, 51, 39, 10%);
+            box-shadow: 0px 4px 30px rgba(43, 51, 39, 0.1);
             z-index: 5;
         }
         &--fix{
