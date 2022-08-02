@@ -60,21 +60,102 @@
 
     </div>
 
-    <div class="modal" id="quickOrder" aria-hidden="true">
-    <div class="modal-dialog">
-        <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.55401 10.5L2 2.94599L2.94599 2L10.5 9.55401L18.054 2L19 2.94599L11.446 10.5L19 18.054L18.054 19L10.5 11.446L2.94599 19L2 18.054L9.55401 10.5Z" fill="#333333"/>
+    <div class="modal" id="callModal">
+    <div class="modal__dialog">
+        <button type="button" class="modal__close mbtn" data-bs-dismiss="modal" aria-label="Close">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.999962 13L13 1" stroke="#A9A9A9" stroke-width="2" stroke-linecap="round"/>
+                <path d="M13 13L1 1" stroke="#A9A9A9" stroke-width="2" stroke-linecap="round"/>
             </svg>
         </button>
 
-
-
+        <div class="modal__title">
+            Оставьте свои контакты <br>
+            и мы вам перезвоним
+        </div>
+        <form id="callForm" class="modal__form validate-form">
+            <fieldset class='mfg'>
+                <label>Ваше имя</label>
+                <input type='text' name="name" placeholder="Введите имя"/>
+                <span class="mfg__error body-text3">Неправильно заполнено поле</span>
+            </fieldset>
+            <fieldset class='mfg'>
+                <label>Телефон</label>
+                <input type='tel' name="tel" placeholder="+7"/>
+                <span class="mfg__error body-text3">Неправильно заполнено поле</span>
+            </fieldset>
+            <div class="modal__hint">
+                Заполняя эту форму, я даю согласие на <a href="">обработку персональных данных</a>
+            </div>
+            <button class="modal__btn mbtn mbtn-green">
+                <span>Оставить заявку</span>
+            </button>
+        </form>
     </div>
 </div>
 
+<div class="modal" id="callModal2">
+    <div class="modal__dialog">
+        <button type="button" class="modal__close mbtn" data-bs-dismiss="modal" aria-label="Close">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.999962 13L13 1" stroke="#A9A9A9" stroke-width="2" stroke-linecap="round"/>
+                <path d="M13 13L1 1" stroke="#A9A9A9" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+        </button>
+
+        <div class="modal__title">
+            Оставьте заявку <br>
+            на консультацию с менеджером
+        </div>
+        <form id="callForm2" class="modal__form validate-form">
+            <fieldset class='mfg'>
+                <label>Ваше имя</label>
+                <input type='text' name="name" placeholder="Введите имя"/>
+                <span class="mfg__error body-text3">Неправильно заполнено поле</span>
+            </fieldset>
+
+            <div class="modal__subtitle">Выберите удобный способ связи</div>
+
+            <div class="modal__variant">
+                <div class="radio">
+                    <input type="radio" name="variant">
+                    <label>Телефон</label>
+                </div>
+                <fieldset class='mfg'>
+                    <input type='tel' name="tel" placeholder="+7"/>
+                    <span class="mfg__error body-text3">Неправильно заполнено поле</span>
+                </fieldset>
+            </div>
+
+            <div class="modal__variant">
+                <div class="radio">
+                    <input type="radio" name="variant">
+                    <label>Е-mail </label>
+                </div>
+                <fieldset class='mfg'>
+                    <input type='tel' name="tel" placeholder="Введите e-mail"/>
+                    <span class="mfg__error body-text3">Неправильно заполнено поле</span>
+                </fieldset>
+            </div>
+
+            <fieldset class='mfg'>
+                <textarea placeholder="Опишите свой вопрос и мы направим письменный ответ на ваш e-mail."></textarea>
+                <span class="mfg__error body-text3">Неправильно заполнено поле</span>
+            </fieldset>
+
+
+            <div class="modal__hint">
+                Заполняя эту форму, я даю согласие на <a href="">обработку персональных данных</a>
+            </div>
+            <button class="modal__btn mbtn mbtn-green">
+                <span>Оставить заявку</span>
+            </button>
+        </form>
+    </div>
+</div>
 
 <!-- <div class="modal-backdrop show"></div> -->
+
     <!--  -->
     <script src="js/libs.min.js"></script>
 <script src="js/main.min.js"></script>

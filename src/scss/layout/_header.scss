@@ -82,7 +82,6 @@
             margin-right: 12px;
         }
         &--active {
-            pointer-events: none;
             .header__catalog-btn {
                 &-icon {
                     display: none;
@@ -196,7 +195,7 @@
     display: flex;
     align-items: center;
     &__item {
-        margin-left: 22px;
+        margin-left: 12px;
         font-size: 16px;
         position: relative;
         &:last-child {
@@ -217,12 +216,17 @@
             align-items: center;
             &:hover {
                 cursor: pointer;
-                color: $primaryHover;
+                //color: $primaryHover;
             }
             &--active {
                 &~.nav__item-hidden {
                     opacity: 1;
                     pointer-events: unset;
+                }
+            }
+            a{
+                &:hover{
+                    color: inherit;
                 }
             }
         }
@@ -242,6 +246,9 @@
                 min-width: 154px;
             }
         }
+        &--gray{
+            color: $gray2;
+        }
     }
     &__subitem {
         display: block;
@@ -251,7 +258,12 @@
             margin-bottom: 12px;
         }
         &:hover {
-            color: $gray2;
+            color: $black;
+        }
+    }
+    &__link{
+        &:hover{
+            color: inherit;
         }
     }
 }
@@ -291,9 +303,11 @@
     &__item {
         margin: 0;
         position: static;
-        color: #727272;
         &:not(:last-child) {
             margin-bottom: 12px;
+        }
+        &--gray{
+            color: $gray2;
         }
     }
     &__show {
@@ -319,6 +333,11 @@
                 pointer-events: unset;
             }
         }
+        a{
+            &:hover{
+                color: inherit;
+            }
+        }
     }
     &__hidden {
         border-radius: 0 0 8px 0;
@@ -341,6 +360,12 @@
         display: block;
         &:not(:last-child) {
             margin-bottom: 12px;
+        }
+        &:hover{
+            color: $black;
+        }
+        &--gray{
+            color: $gray2;
         }
     }
 }
@@ -369,13 +394,13 @@
         }
         &__search {
             position: absolute;
-            max-width: calc(100% - 186px);
+            max-width: calc(100% - 440px);
             right: 145px;
             top: 50%;
             transform: translateY(-50%);
             z-index: 3;
             margin: 0;
-            width: 360px;
+            width:100%;
             opacity: 0;
             pointer-events: none;
             transition: all .225s;
@@ -390,7 +415,7 @@
                 }
             }
             input {
-                height: 36px;
+                height: 42px;
                 padding-right: 40px;
             }
             &-btn {
@@ -436,7 +461,7 @@
         &__catalog-btn {
             margin-left: 35px;
             width: 136px;
-            height: 36px;
+            height: 42px;
             svg {
                 margin-right: 8px;
             }
@@ -460,7 +485,6 @@
     .nav {
         opacity: 0;
         pointer-events: none;
-        position: absolute;
         top: 100%;
         right: 0;
         width: 376px;
@@ -482,7 +506,6 @@
         &__item {
             margin: 0;
             position: static;
-            color: #727272;
             &-show {
                 min-height: unset;
                 height: 22px;
@@ -584,7 +607,6 @@
             display: none;
         }
         &__btn {
-            //display: none;
             margin-left: 4px;
             margin-right: 0 !important;
             svg {
@@ -603,8 +625,7 @@
             height: 42px;
             font-size: 14px;
             color: #727272;
-            margin-left: auto;
-            transform: translateX(-10px);
+            margin-left: 4px;
             border-radius: 6px;
             &-icon,
             &-icon2 {
@@ -631,7 +652,7 @@
             margin: 0;
             z-index: 7;
             position: absolute;
-            right: 117px;
+            right: 116.5px;
             bottom: 85px;
             font-size: 0;
             width: 28px;
@@ -650,6 +671,8 @@
             opacity: 1;
             pointer-events: unset;
             transition: 0s;
+            top: 100%;
+            transform: unset;
             input {
                 height: 42px;
                 font-size: 14px;

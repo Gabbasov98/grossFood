@@ -42,7 +42,6 @@ $(".submit__btn").click(function (e) {
     if(clientFormValidate()) {
         $(".validate-form").submit()
     }
-
 })
 
 function clientFormValidate(){

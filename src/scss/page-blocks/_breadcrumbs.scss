@@ -20,10 +20,11 @@
             background-position: center;
             top: -2px;
             right: 100%;
+            margin-right: 4px;
             opacity: 0;
         }
         &:not(:first-child) {
-            margin-left: 18px;
+            margin-left: 16px;
             &::before{
                 opacity: 1;
             }

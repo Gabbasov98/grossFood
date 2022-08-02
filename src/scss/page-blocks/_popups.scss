@@ -1,7 +1,105 @@
-@import 'vars';
-@import 'mixins';
-.modal-backdrop {
-    &.show {
-        opacity: 0.7;
+@import '../vars';
+@import '../mixins';
+.modal {
+    background: rgba(#000, .7);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    overflow-y: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    opacity: 0;
+    pointer-events: none;
+    &--active{
+        opacity: 1;
+        pointer-events: unset;
+    }
+    &__dialog{
+        background: #FFFFFF;
+        border-radius: 8px;
+        width: 600px;
+        max-width: 100%;
+        padding: 60px 100px;
+        position: relative;
+    }
+    &__close{
+        position: absolute;
+        right: 32px;
+        top: 32px;
+        &:hover{
+            path{
+                stroke:$black;
+            }
+        }
+    }
+    &__title{
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 108%;
+        text-align: center;
+
+    }
+    &__subtitle{
+        margin-top: 20px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 139%;
+        text-align: center;
+    }
+    &__form{
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .mfg{
+        label{
+            padding-left: 0;
+        }
+    }
+    &__hint{
+        margin-top: -8px;
+        font-size: 15px;
+        line-height: 18px;
+        color: $gray2;
+        a{
+            text-decoration: underline;
+        }
+    }
+    &__btn{
+        width: 250px;
+        margin: 10px auto 0;
+    }
+    &__variant{
+        .radio{
+            margin-bottom: 4px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 576px){
+    .modal{
+        &__dialog{
+            padding: 30px 20px;
+            height: 100vh;
+            overflow-y: auto;
+            border-radius: 0;
+        }
+        &__close{
+            top: 10px;
+            right: 10px;
+        }
+        &__title{
+            font-size: 22px;
+        }
+        &__subtitle{
+            font-size: 16px;
+            margin-top: 10px;
+        }
     }
 }
