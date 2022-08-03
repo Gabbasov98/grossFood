@@ -139,3 +139,50 @@ function clientFormValidate(){
 
 }
 
+$("#callForm .modal__btn").click(function (e) {
+    e.preventDefault()
+    if(callFormValidate()) {
+        $("#callForm").submit()
+    }
+})
+
+function callFormValidate(){
+    let clientNameIsValid = false
+    let phoneIsValid = false
+
+
+    let clientNameInput = $("#callForm .name-input")
+    let clientNameVal = $(clientNameInput).val()
+
+    if (clientNameVal) {
+        $(clientNameInput).removeClass("error")
+        clientNameIsValid = true
+    } else {
+        $(clientNameInput).addClass("error")
+        clientNameIsValid = false
+    }
+
+    let phoneInput = $("#callForm .tel-input")
+    let phoneVal = $(phoneInput).val()
+    phoneVal = phoneVal.replaceAll('_', '').length;
+
+    if (phoneVal === 18) {
+        $(phoneInput).removeClass("error")
+        phoneIsValid = true
+    } else {
+        $(phoneInput).addClass("error")
+        phoneIsValid = false
+    }
+
+
+
+
+    if(clientNameIsValid && phoneIsValid) {
+        return true
+    } else{
+        return false
+    }
+
+
+}
+
