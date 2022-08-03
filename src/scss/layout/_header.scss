@@ -625,7 +625,7 @@
             height: 42px;
             font-size: 14px;
             color: #727272;
-            margin-left: 4px;
+            margin-left: 9px;
             border-radius: 6px;
             &-icon,
             &-icon2 {
@@ -826,7 +826,7 @@
     }
 }
 
-@media screen and (max-width: 380px){
+@media screen and (max-width: 374px){
     .header{
         &__phone{
             right: 107px;
