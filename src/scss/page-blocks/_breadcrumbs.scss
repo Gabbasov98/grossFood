@@ -49,6 +49,7 @@
             &::before{
                 opacity: 1;
                 top: -4px !important;
+                transform: rotate(180deg);
             }
         }
     }
