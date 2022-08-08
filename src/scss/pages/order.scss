@@ -13,11 +13,14 @@
       padding-top: 28px;
       margin-top: 32px;
     }
-    &:nth-child(even){
-      .order__img{
-        order: 2;
+    @media screen and (min-width: 1024px){
+      &:nth-child(even){
+        .order__img{
+          order: 2;
+        }
       }
     }
+
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -69,13 +72,7 @@
         margin-top: 30px;
         border: none;
       }
-      &:nth-child(even){
-        .order__img{
-          order: 1;
-        }
-      }
       grid-template-columns: 1fr;
-      //align-items: center;
       gap:40px;
     }
     &__desc{
