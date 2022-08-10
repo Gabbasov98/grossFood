@@ -188,7 +188,7 @@
     display: flex;
     align-items: center;
     &__item {
-        margin-left: 12px;
+        margin-left: 22px;
         font-size: 16px;
         position: relative;
         &:last-child {
@@ -420,6 +420,7 @@
             }
         }
         &__btn {
+            margin-right: 20px;
             svg {
                 margin: 0;
                 width: 24px;
@@ -428,11 +429,9 @@
             &-title {
                 display: none;
             }
-            &:not(:last-of-type) {
-                margin-right: 20px;
-            }
         }
         &__cart {
+            margin-right: 0;
             &-num {
                 top: -6px;
                 right: -10px;
