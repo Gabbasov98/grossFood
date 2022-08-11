@@ -186,3 +186,83 @@ function callFormValidate(){
 
 }
 
+
+$("#callForm2 .modal__btn").click(function (e) {
+    e.preventDefault()
+    if(callForm2Validate()) {
+        $("#callForm2").submit()
+    }
+})
+
+function callForm2Validate(){
+    let clientNameIsValid = false
+    let phoneIsValid = false
+    let emailNameIsValid = false
+
+    let phoneInput = $("#callForm2 .tel-input")
+    let emailInput = $("#callForm2 .email-input")
+
+    let variant = $("#callForm2 .modal__variant input[type='radio']:checked").val()
+    if(variant === "phone"){
+
+        let phoneVal = $(phoneInput).val()
+        phoneVal = phoneVal.replaceAll('_', '').length;
+
+        if (phoneVal === 18) {
+            $(phoneInput).removeClass("error")
+            phoneIsValid = true
+        } else {
+            $(phoneInput).addClass("error")
+            phoneIsValid = false
+        }
+
+        emailNameIsValid = true
+        $(emailInput).removeClass("error")
+
+    }
+    else if(variant === "email"){
+
+        let emailVal = $(emailInput).val()
+
+        if (!emailVal) {
+            $(emailInput).addClass("error")
+            emailNameIsValid = false
+        }
+
+        if(emailVal.match(emailPattern)){
+            $(emailInput).removeClass("error")
+            emailNameIsValid = true
+        }
+        else{
+            $(emailInput).addClass("error")
+            emailNameIsValid = false
+        }
+
+        phoneIsValid = true
+        $(phoneInput).removeClass("error")
+
+    }
+
+
+    let clientNameInput = $("#callForm2 .name-input")
+    let clientNameVal = $(clientNameInput).val()
+
+    if (clientNameVal) {
+        $(clientNameInput).removeClass("error")
+        clientNameIsValid = true
+    } else {
+        $(clientNameInput).addClass("error")
+        clientNameIsValid = false
+    }
+
+
+
+    if(clientNameIsValid && phoneIsValid && emailNameIsValid) {
+        return true
+    } else{
+        return false
+    }
+
+
+}
+

@@ -723,12 +723,12 @@
             margin-top: 30px;
             &::before {
                 background-image: url(../img/flour5.webp);
-                width: 367px;
-                height: 169px;
+                width: 388px;
+                height: 227px;
                 left: unset;
-                right: -30px;
-                bottom: -84px;
-                transform: rotate(-154.57deg);
+                right: -20px;
+                bottom: -167px;
+                transform: rotate(0);
             }
         }
         &__items {
@@ -1177,8 +1177,10 @@
         &__inner {
             display: block;
             &::before {
-                right: -150px;
-                top: 250px;
+                width: 222px;
+                height: 164px;
+                top: 262px;
+                background-image: url(../img/flour6.png);
             }
         }
         &__items {
@@ -1210,11 +1212,13 @@
             }
         }
     }
+
     .work-with {
         &__btn {
             width: 100%;
         }
     }
+
     .become-client {
         padding: 25px 0;
         margin-top: 25px;
@@ -1254,6 +1258,7 @@
             }
         }
     }
+
     .clients {
         .slick {
             &-list {
@@ -1275,9 +1280,18 @@
             margin-left: -10px;
         }
     }
+
     .become-client {
         &__form {
             padding: 24px 20px 28px;
+        }
+    }
+
+    .why{
+        &__inner{
+            &::before{
+                right: -10px;
+            }
         }
     }
 }

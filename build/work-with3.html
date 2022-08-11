@@ -590,7 +590,7 @@
     </div>
 </div>
 
-<div class="modal" id="callModal2">
+<div class="modal modal--active" id="callModal2">
     <div class="modal__dialog">
         <button type="button" class="modal__close mbtn" data-bs-dismiss="modal" aria-label="Close">
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -606,7 +606,7 @@
         <form id="callForm2" class="modal__form validate-form">
             <fieldset class='mfg'>
                 <label>Ваше имя</label>
-                <input type='text' name="name" placeholder="Введите имя"/>
+                <input type='text' class="name-input" name="name" placeholder="Введите имя"/>
                 <span class="mfg__error body-text3">Неправильно заполнено поле</span>
             </fieldset>
 
@@ -614,22 +614,22 @@
 
             <div class="modal__variant">
                 <div class="radio">
-                    <input type="radio" name="variant">
+                    <input checked type="radio" name="variant" value="phone">
                     <label>Телефон</label>
                 </div>
                 <fieldset class='mfg'>
-                    <input type='tel' name="tel" placeholder="+7"/>
+                    <input type='tel' class="tel-input" name="tel" placeholder="+7"/>
                     <span class="mfg__error body-text3">Неправильно заполнено поле</span>
                 </fieldset>
             </div>
 
             <div class="modal__variant">
                 <div class="radio">
-                    <input type="radio" name="variant">
+                    <input type="radio" name="variant" value="email">
                     <label>Е-mail </label>
                 </div>
                 <fieldset class='mfg'>
-                    <input type='email' name="tel" placeholder="Введите e-mail"/>
+                    <input type='email' class="email-input" placeholder="Введите e-mail"/>
                     <span class="mfg__error body-text3">Неправильно заполнено поле</span>
                 </fieldset>
             </div>
