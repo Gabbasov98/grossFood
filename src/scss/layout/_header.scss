@@ -261,7 +261,7 @@
 
 .header-catalog {
     max-height: calc(100vh - 125px);
-    overflow-y: auto;
+
     left: 155px;
     top: 100%;
     opacity: 0;
@@ -285,7 +285,7 @@
         box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.05);
         border-radius: 0px 0px 8px 8px;
         width: 205px;
-        height: 500px;
+        //height: 500px;
         padding: 16px 20px;
         background: #FFFFFF;
         z-index: 2;
